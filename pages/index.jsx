@@ -30,9 +30,11 @@ const Home = () => {
         const images = srcset.split(',');
         const replaced = images.map((image) => {
           if (image.trim().indexOf('images/') === 0) {
-            return `<%=image_path('${image
+            const srcsetParts = image.trim().split(' ');
+
+            return `<%=image_path('${srcsetParts[0]
               .trim()
-              .replace('images/', replacingText)}')%>`;
+              .replace('images/', replacingText)}')%> ${srcsetParts[1]}`;
           }
           return image;
         }).join(', ');
