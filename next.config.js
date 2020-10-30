@@ -1,5 +1,4 @@
 module.exports = {
-  // basePath: '/image-template-prepender',
+  basePath: '/image-template-prepender',
   assetPrefix: '/image-template-prepender/',
-  trailingSlash: true,
 };
