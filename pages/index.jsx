@@ -70,7 +70,7 @@ const Home = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Image to Template Translator</h1>
+        <h1 className={styles.title}>Image to Template Prepender</h1>
 
         <p className={styles.description}>
           Get started by pasting HTML into the input to get back a response with
@@ -86,7 +86,7 @@ const Home = () => {
               '<div data-w-id="a1c3d1ea-0b0d-0060-0b74-fc4634ed5369" class="image-wrapper"><img src="images/IMG_8639_2.jpg" sizes="(max-width: 767px) 93vw, (max-width: 991px) 600px, (max-width: 1439px) 94vw, 1236px" srcset="images/IMG_8639_2-p-500.jpeg 500w, images/IMG_8639_2-p-800.jpeg 800w, images/IMG_8639_2-p-1080.jpeg 1080w, images/IMG_8639_2-p-1600.jpeg 1600w, images/IMG_8639_2.jpg 1671w" alt="" class="image-zoom"></div>'
             }
             value={text}
-            style={{ height: 300, width: 500 }}
+            style={{ height: 300, width: 750 }}
           />
         </div>
 
@@ -102,7 +102,7 @@ const Home = () => {
             onChange={handleReplaceChange}
             placeholder="Webflow-Radio/"
             value={replaceText}
-            style={{ width: 500 }}
+            style={{ width: 750 }}
           />
         </div>
 
@@ -111,7 +111,7 @@ const Home = () => {
             className={styles.code}
             value={replacedText}
             readOnly
-            style={{ height: 300, width: 500 }}
+            style={{ height: 300, width: 750 }}
           />
         </div>
       </main>
